@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box{
+    width: 750px;
+    padding: 40px 35px 55px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(50px);
+    color: white;
+    border-radius: 10px;
+}
+h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.input-box .input-field{
+    position:relative;
+    width: 48%;
+    height: 50px;
+    margin: 13px 0;
+}
+.input-box .input-field input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    outline: none;
+    color: #fff;
+    padding-left: 45px;
+}
+.input-box .input-field input::placeholder {
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+}
+.input-box .input-field i{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translatey(-50%);
+    font-size: 20px;
+}
+label{
+    display: inline-block;
+    font-size: 14.5px;
+    margin: 10px 0 23px;
+}
+label input{
+    accent-color: white;
+    margin-right: 5px;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    text-transform: capitalize;
+    font-weight: 650;
+}
+@media screen and (max-width:567px) {
+    .input-box{
+        flex-direction: column;
+    }
+    .input-box .input-field{
+        width: 100%;
+    }
+}

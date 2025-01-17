@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>registration form</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" href="icons/letter-m.png">
+</head>
+<body>
+     <div class="box">
+        <form>
+            <h1>Registration</h1>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="full name" required>
+                    <i class='bx bxs-user'></i>
+                </div>   
+                <div class="input-field">
+                    <input type="text" placeholder="username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+            </div>  
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="email" placeholder="email" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="phone number" required>
+                    <i class='bx bxs-phone'></i>
+                </div>
+            </div>    
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="password" placeholder="password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="input-field">
+                    <input type="password" placeholder="confirm password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+            </div>    
+
+            <label><input type="checkbox" required>I hereby declare that the 
+                above information provided is true and correct</label>
+            <button type="submit" class="btn">register</button>
+        </form>
+     </div>
+</body>
+</html>
